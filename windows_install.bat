@@ -16,7 +16,7 @@ copy /Y "%currdir%\windows_service_delete.bat" %installpath%
 copy /Y "%currdir%\windows_uninstall.bat" %installpath%
 copy /Y "%currdir%\firewall_allow_minio.bat" %installpath%
 copy /Y "%currdir%\firewall_delete_minio.bat" %installpath%
-copy /Y "%currdir%\nssm.exe" %installpath%\bin
+copy /Y "%currdir%\nssm.exe" %installpath%
 
 call windows_service_create.bat
 call firewall_allow_minio.bat
